@@ -6,7 +6,7 @@ import datetime
 
 def get_weather(city):
     url = "http://api.openweathermap.org/weather/2.5/weather"
-    key = "9a05b63243ab6d8b9556ea184ef38821"
+    key = ""
     request_url = f"{url}?appid={key}&q={city.title()}"
     response = requests.get(request_url)
     weather = response.json()

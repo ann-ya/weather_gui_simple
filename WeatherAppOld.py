@@ -7,7 +7,7 @@ import datetime
 
 def get_weather(city):
     BASE_URL = "http://api.openweathermap.org/weather/2.5/weather"
-    API_KEY = "9a05b63243ab6d8b9556ea184ef38821"
+    API_KEY = ""
     request_url = f"{BASE_URL}?appid={API_KEY}&q={city.title()}"
     response = requests.get(request_url)
     # params = {"APPID": API_KEY, 'q': city}
